@@ -1,0 +1,6 @@
+<form (ngSubmit)="onSubmit()" #chatForm="ngForm">
+	<input type="text" value="Pseudo" required [(ngModel)]="message.username" name="username" value="Pseudo" >
+	<textarea rows="1" [(ngModel)]="message.content" name="message" required>Message</textarea>
+	<button [disabled]="!chatForm.form.valid">Envoyer</button>
+</form>
+<p>{{test}}</p>

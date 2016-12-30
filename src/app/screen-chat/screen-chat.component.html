@@ -1,0 +1,7 @@
+<table>
+    <tr *ngFor="let message of chat.messages">
+	<td>{{message.username}}</td>
+	<td>{{message.date |  date : 'shortTime'}}</td>
+	<td>{{message.content}}</td>
+    </tr>
+</table>
